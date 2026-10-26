@@ -3,12 +3,10 @@ var activeCarIndex = 0;
 
 $(document).ready(function () {
 
-    // استرجاع الوضع المحفوظ (نهاري / ليلي) عند فتح أي صفحة
     if (localStorage.getItem("theme") === "dark") {
         $("body").addClass("dark-mode");
     }
 
-    // تبديل الوضع عند الضغط على زر الشمس / الهلال
     $("#themeToggle").click(function () {
         $("body").toggleClass("dark-mode");
         if ($("body").hasClass("dark-mode")) {
@@ -18,7 +16,6 @@ $(document).ready(function () {
         }
     });
 
-    // إظهار وإخفاء تفاصيل السيارة وصورتها عبر jQuery (مع إمكانية فتح عدة سيارات معاً)
     $(".details-check").change(function () {
         var carRow = $(this).closest(".car");
         var detailsRow = carRow.next(".details-row");
@@ -37,7 +34,6 @@ $(document).ready(function () {
         }
     });
 
-    // اختيار السيارة أو إلغاء اختيارها من الجدول
     $(".select-check").change(function () {
         var carRow = $(this).closest(".car");
         var labelBtn = $(this).closest(".table-btn");

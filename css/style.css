@@ -275,7 +275,6 @@ legend {
     display: inline-block;
 }
 
-/* تنسيق جدول السيارات */
 .table-container {
     background-color: #ffffff;
     border-radius: 16px;
@@ -361,7 +360,6 @@ legend {
     font-weight: 400;
 }
 
-/* أزرار الجدول مع مربعات الاختيار */
 .table-btn {
     display: inline-flex;
     align-items: center;
@@ -388,7 +386,6 @@ legend {
     accent-color: #0a3d91;
 }
 
-/* صف التفاصيل المنسدل */
 .details-row {
     display: none;
     background-color: #f8f9fc;
@@ -461,7 +458,6 @@ legend {
     font-size: 14px;
 }
 
-/* الأزرار العامة */
 .btn {
     display: inline-block;
     padding: 10px 22px;
@@ -874,7 +870,6 @@ legend {
     font-size: 14px;
 }
 
-/* التكيف مع شاشات الموبايل والتابلت الصغير */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 26px;
@@ -884,7 +879,6 @@ legend {
         justify-content: center;
     }
 
-    /* إلغاء السكرول الأفقي وتحويل الجدول لبطاقات متجاوبة */
     .table-container {
         background-color: transparent;
         box-shadow: none;
@@ -898,12 +892,10 @@ legend {
         min-width: 100%;
     }
 
-    /* إخفاء ترويسة الجدول العلوية على الموبايل واستبدالها بعناوين داخل كل صف */
     .cars-table thead {
         display: none;
     }
 
-    /* تنسيق صف السيارة كبطاقة على الموبايل */
     .cars-table tr.car {
         display: flex;
         flex-wrap: wrap;
@@ -930,7 +922,6 @@ legend {
         text-align: left;
     }
 
-    /* إظهار اسم كل حقل على اليمين في الموبايل */
     .cars-table tr.car td:nth-child(1)::before {
         content: "الرمز";
         color: #8395a7;
@@ -959,7 +950,6 @@ legend {
         font-weight: 700;
     }
 
-    /* وضع زري (إظهار التفاصيل) و(اختيار) بجانب بعضهما أسفل البطاقة */
     .cars-table tr.car td:nth-child(5),
     .cars-table tr.car td:nth-child(6) {
         width: 50%;
@@ -975,7 +965,6 @@ legend {
         font-size: 13px;
     }
 
-    /* تنسيق صندوق التفاصيل والصورة عند فتحه على الموبايل */
     .cars-table tr.details-row[style*="table-row"],
     .cars-table tr.details-row[style*="block"] {
         display: block !important;
@@ -1014,14 +1003,10 @@ legend {
         min-width: 0;
     }
 
-    /* جعل العنصر الخامس (اللون) يأخذ عرض السطر كاملاً لتناسق الشكل */
     .details-info div:last-child {
         grid-column: span 2;
     }
 }
-/* =========================================
-   زر تبديل الوضع (شمس مفرغة / هلال مفرغ)
-   ========================================= */
 .nav-links {
     align-items: center;
 }
@@ -1054,11 +1039,9 @@ legend {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    /* شكل شمس مفرغة من الداخل (حواف فقط) في الوضع النهاري */
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230a7cff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='5'/%3E%3Cline x1='12' y1='1' x2='12' y2='3'/%3E%3Cline x1='12' y1='21' x2='12' y2='23'/%3E%3Cline x1='4.22' y1='4.22' x2='5.64' y2='5.64'/%3E%3Cline x1='18.36' y1='18.36' x2='19.78' y2='19.78'/%3E%3Cline x1='1' y1='12' x2='3' y2='12'/%3E%3Cline x1='21' y1='12' x2='23' y2='12'/%3E%3Cline x1='4.22' y1='19.78' x2='5.64' y2='18.36'/%3E%3Cline x1='18.36' y1='5.64' x2='19.78' y2='4.22'/%3E%3C/svg%3E");
 }
 
-/* شكل هلال مفرغ من الداخل (حواف فقط) في الوضع الليلي */
 body.dark-mode .theme-icon {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2338bdf8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'/%3E%3C/svg%3E");
 }
@@ -1073,9 +1056,6 @@ body.dark-mode .theme-btn:hover {
     box-shadow: 0 4px 12px rgba(56, 189, 248, 0.25);
 }
 
-/* =========================================
-   تنسيقات الوضع الليلي (Dark Mode) للموقع
-   ========================================= */
 body.dark-mode {
     background-color: #0f172a;
     color: #e2e8f0;
