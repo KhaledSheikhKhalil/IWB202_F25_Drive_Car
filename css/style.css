@@ -187,6 +187,8 @@ legend {
 .box p {
     margin: 4px 0;
     color: #57606f;
+    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 .member {
