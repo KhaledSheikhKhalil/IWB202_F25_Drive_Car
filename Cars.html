@@ -1,0 +1,477 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ar" lang="ar" dir="rtl">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>تأجير السيارات - قائمة السيارات</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navbar-inner">
+            <a href="home.html" class="logo">درايف <span>كار</span></a>
+            <div class="nav-links">
+                <a href="home.html">الرئيسية</a>
+                <a href="AboutUs.html">من نحن</a>
+                <a href="Cars.html" class="active">السيارات</a>
+                <button type="button" id="themeToggle" class="theme-btn" title="تبديل الوضع النهاري والليلي">
+                    <span class="theme-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero small">
+        <h1>السيارات المتاحة للتأجير</h1>
+        <p>اختر سيارة أو أكثر من الجدول ثم اضغط متابعة لإكمال طلب الحجز.</p>
+    </div>
+
+    <div class="section">
+        <div class="notes">
+            <div class="note note-red">
+                <span class="note-icon">!</span>
+                <span>أعلى مدة للتأجير هي <strong>30 يوم</strong> فقط.</span>
+            </div>
+            <div class="note note-offer">
+                <span class="note-icon">%</span>
+                <span>احجز أكثر من <strong>7 أيام</strong> واحصل على حسم <strong>10%</strong> على المبلغ الكامل.</span>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table class="cars-table">
+                <thead>
+                    <tr>
+                        <th>الرمز</th>
+                        <th>الموديل</th>
+                        <th>سنة الصنع</th>
+                        <th>السعر اليومي</th>
+                        <th>إظهار التفاصيل</th>
+                        <th>اختيار</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- السيارة 1 -->
+                    <tr class="car" data-name="Toyota Corolla" data-price="250000">
+                        <td><span class="tag">CR-001</span></td>
+                        <td>
+                            <strong class="car-name">Toyota Corolla</strong>
+                            <span class="badge-inline badge-hot">الأكثر طلباً</span>
+                        </td>
+                        <td>2023</td>
+                        <td><div class="price">250,000 <span>ل.س</span></div></td>
+                        <td>
+                            <label class="table-btn btn-secondary">
+                                <input type="checkbox" class="details-check" />
+                                <span>إظهار التفاصيل</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="table-btn btn-primary">
+                                <input type="checkbox" class="select-check" />
+                                <span>اختيار</span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="6">
+                            <div class="details">
+                                <div class="details-img">
+                                    <img src="./images/Toyota Corolla.jpg" alt="Toyota Corolla" />
+                                </div>
+                                <div class="details-info">
+                                    <div><span>نوع الوقود</span><strong>بنزين</strong></div>
+                                    <div><span>ناقل الحركة</span><strong>أوتوماتيك</strong></div>
+                                    <div><span>عدد المقاعد</span><strong>5</strong></div>
+                                    <div><span>عداد الكيلومترات</span><strong>15,000 كم</strong></div>
+                                    <div><span>اللون</span><strong>أبيض</strong></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- السيارة 2 -->
+                    <tr class="car" data-name="Kia Sportage" data-price="400000">
+                        <td><span class="tag">CR-002</span></td>
+                        <td><strong class="car-name">Kia Sportage</strong></td>
+                        <td>2022</td>
+                        <td><div class="price">400,000 <span>ل.س</span></div></td>
+                        <td>
+                            <label class="table-btn btn-secondary">
+                                <input type="checkbox" class="details-check" />
+                                <span>إظهار التفاصيل</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="table-btn btn-primary">
+                                <input type="checkbox" class="select-check" />
+                                <span>اختيار</span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="6">
+                            <div class="details">
+                                <div class="details-img">
+                                    <img src="./images/Kia Sportage.jpg" alt="Kia Sportage" />
+                                </div>
+                                <div class="details-info">
+                                    <div><span>نوع الوقود</span><strong>بنزين</strong></div>
+                                    <div><span>ناقل الحركة</span><strong>أوتوماتيك</strong></div>
+                                    <div><span>عدد المقاعد</span><strong>5</strong></div>
+                                    <div><span>عداد الكيلومترات</span><strong>30,000 كم</strong></div>
+                                    <div><span>اللون</span><strong>أسود</strong></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- السيارة 3 -->
+                    <tr class="car" data-name="Hyundai Elantra" data-price="300000">
+                        <td><span class="tag">CR-003</span></td>
+                        <td>
+                            <strong class="car-name">Hyundai Elantra</strong>
+                            <span class="badge-inline badge-new">جديد</span>
+                        </td>
+                        <td>2024</td>
+                        <td><div class="price">300,000 <span>ل.س</span></div></td>
+                        <td>
+                            <label class="table-btn btn-secondary">
+                                <input type="checkbox" class="details-check" />
+                                <span>إظهار التفاصيل</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="table-btn btn-primary">
+                                <input type="checkbox" class="select-check" />
+                                <span>اختيار</span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="6">
+                            <div class="details">
+                                <div class="details-img">
+                                    <img src="./images/Hyundai Elantra.avif" alt="Hyundai Elantra" />
+                                </div>
+                                <div class="details-info">
+                                    <div><span>نوع الوقود</span><strong>بنزين</strong></div>
+                                    <div><span>ناقل الحركة</span><strong>أوتوماتيك</strong></div>
+                                    <div><span>عدد المقاعد</span><strong>5</strong></div>
+                                    <div><span>عداد الكيلومترات</span><strong>5,000 كم</strong></div>
+                                    <div><span>اللون</span><strong>فضي</strong></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- السيارة 4 -->
+                    <tr class="car" data-name="Chevrolet Spark" data-price="180000">
+                        <td><span class="tag">CR-004</span></td>
+                        <td><strong class="car-name">Chevrolet Spark</strong></td>
+                        <td>2021</td>
+                        <td><div class="price">180,000 <span>ل.س</span></div></td>
+                        <td>
+                            <label class="table-btn btn-secondary">
+                                <input type="checkbox" class="details-check" />
+                                <span>إظهار التفاصيل</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="table-btn btn-primary">
+                                <input type="checkbox" class="select-check" />
+                                <span>اختيار</span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="6">
+                            <div class="details">
+                                <div class="details-img">
+                                    <img src="./images/Chevrolet Spark.webp" alt="Chevrolet Spark" />
+                                </div>
+                                <div class="details-info">
+                                    <div><span>نوع الوقود</span><strong>بنزين</strong></div>
+                                    <div><span>ناقل الحركة</span><strong>عادي</strong></div>
+                                    <div><span>عدد المقاعد</span><strong>4</strong></div>
+                                    <div><span>عداد الكيلومترات</span><strong>45,000 كم</strong></div>
+                                    <div><span>اللون</span><strong>أحمر</strong></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- السيارة 5 -->
+                    <tr class="car" data-name="Nissan Sunny" data-price="220000">
+                        <td><span class="tag">CR-005</span></td>
+                        <td><strong class="car-name">Nissan Sunny</strong></td>
+                        <td>2022</td>
+                        <td><div class="price">220,000 <span>ل.س</span></div></td>
+                        <td>
+                            <label class="table-btn btn-secondary">
+                                <input type="checkbox" class="details-check" />
+                                <span>إظهار التفاصيل</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="table-btn btn-primary">
+                                <input type="checkbox" class="select-check" />
+                                <span>اختيار</span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="6">
+                            <div class="details">
+                                <div class="details-img">
+                                    <img src="./images/Nissan Sunny.webp" alt="Nissan Sunny" />
+                                </div>
+                                <div class="details-info">
+                                    <div><span>نوع الوقود</span><strong>بنزين</strong></div>
+                                    <div><span>ناقل الحركة</span><strong>أوتوماتيك</strong></div>
+                                    <div><span>عدد المقاعد</span><strong>5</strong></div>
+                                    <div><span>عداد الكيلومترات</span><strong>20,000 كم</strong></div>
+                                    <div><span>اللون</span><strong>رمادي</strong></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- السيارة 6 -->
+                    <tr class="car" data-name="Mercedes C-Class" data-price="650000">
+                        <td><span class="tag">CR-006</span></td>
+                        <td>
+                            <strong class="car-name">Mercedes C-Class</strong>
+                            <span class="badge-inline badge-gold">فاخرة</span>
+                        </td>
+                        <td>2023</td>
+                        <td><div class="price">650,000 <span>ل.س</span></div></td>
+                        <td>
+                            <label class="table-btn btn-secondary">
+                                <input type="checkbox" class="details-check" />
+                                <span>إظهار التفاصيل</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="table-btn btn-primary">
+                                <input type="checkbox" class="select-check" />
+                                <span>اختيار</span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="6">
+                            <div class="details">
+                                <div class="details-img">
+                                    <img src="./images/Mercedes C-Class.jpg" alt="Mercedes C-Class" />
+                                </div>
+                                <div class="details-info">
+                                    <div><span>نوع الوقود</span><strong>بنزين</strong></div>
+                                    <div><span>ناقل الحركة</span><strong>أوتوماتيك</strong></div>
+                                    <div><span>عدد المقاعد</span><strong>5</strong></div>
+                                    <div><span>عداد الكيلومترات</span><strong>10,000 كم</strong></div>
+                                    <div><span>اللون</span><strong>أسود</strong></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- السيارة 7 -->
+                    <tr class="car" data-name="Toyota Camry" data-price="350000">
+                        <td><span class="tag">CR-007</span></td>
+                        <td><strong class="car-name">Toyota Camry</strong></td>
+                        <td>2022</td>
+                        <td><div class="price">350,000 <span>ل.س</span></div></td>
+                        <td>
+                            <label class="table-btn btn-secondary">
+                                <input type="checkbox" class="details-check" />
+                                <span>إظهار التفاصيل</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="table-btn btn-primary">
+                                <input type="checkbox" class="select-check" />
+                                <span>اختيار</span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="6">
+                            <div class="details">
+                                <div class="details-img">
+                                    <img src="./images/Toyota Camry.jpg" alt="Toyota Camry" />
+                                </div>
+                                <div class="details-info">
+                                    <div><span>نوع الوقود</span><strong>بنزين</strong></div>
+                                    <div><span>ناقل الحركة</span><strong>أوتوماتيك</strong></div>
+                                    <div><span>عدد المقاعد</span><strong>5</strong></div>
+                                    <div><span>عداد الكيلومترات</span><strong>25,000 كم</strong></div>
+                                    <div><span>اللون</span><strong>أبيض</strong></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- السيارة 8 -->
+                    <tr class="car" data-name="Hyundai Tucson" data-price="450000">
+                        <td><span class="tag">CR-008</span></td>
+                        <td><strong class="car-name">Hyundai Tucson</strong></td>
+                        <td>2023</td>
+                        <td><div class="price">450,000 <span>ل.س</span></div></td>
+                        <td>
+                            <label class="table-btn btn-secondary">
+                                <input type="checkbox" class="details-check" />
+                                <span>إظهار التفاصيل</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="table-btn btn-primary">
+                                <input type="checkbox" class="select-check" />
+                                <span>اختيار</span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="6">
+                            <div class="details">
+                                <div class="details-img">
+                                    <img src="./images/Hyundai Tucson.jpeg" alt="Hyundai Tucson" />
+                                </div>
+                                <div class="details-info">
+                                    <div><span>نوع الوقود</span><strong>هايبرد</strong></div>
+                                    <div><span>ناقل الحركة</span><strong>أوتوماتيك</strong></div>
+                                    <div><span>عدد المقاعد</span><strong>5</strong></div>
+                                    <div><span>عداد الكيلومترات</span><strong>12,000 كم</strong></div>
+                                    <div><span>اللون</span><strong>رمادي</strong></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- السيارة 9 -->
+                    <tr class="car" data-name="Kia Picanto" data-price="150000">
+                        <td><span class="tag">CR-009</span></td>
+                        <td><strong class="car-name">Kia Picanto</strong></td>
+                        <td>2021</td>
+                        <td><div class="price">150,000 <span>ل.س</span></div></td>
+                        <td>
+                            <label class="table-btn btn-secondary">
+                                <input type="checkbox" class="details-check" />
+                                <span>إظهار التفاصيل</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="table-btn btn-primary">
+                                <input type="checkbox" class="select-check" />
+                                <span>اختيار</span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="6">
+                            <div class="details">
+                                <div class="details-img">
+                                    <img src="./images/Kia Picanto.jpg" alt="Kia Picanto" />
+                                </div>
+                                <div class="details-info">
+                                    <div><span>نوع الوقود</span><strong>بنزين</strong></div>
+                                    <div><span>ناقل الحركة</span><strong>أوتوماتيك</strong></div>
+                                    <div><span>عدد المقاعد</span><strong>4</strong></div>
+                                    <div><span>عداد الكيلومترات</span><strong>40,000 كم</strong></div>
+                                    <div><span>اللون</span><strong>أزرق</strong></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="bottom-bar">
+        <div class="bottom-bar-inner">
+            <span>السيارات المختارة: <strong id="count">0</strong></span>
+            <button type="button" id="btnContinue" class="btn btn-primary">متابعة</button>
+        </div>
+    </div>
+
+    <div class="footer">جميع الحقوق محفوظة &copy; 2026 درايف كار</div>
+
+    <div class="overlay" id="drawerOverlay"></div>
+
+    <div class="drawer" id="bookingDrawer">
+        <div class="drawer-head">
+            <h3>طلب حجز</h3>
+            <button type="button" class="close-btn" id="closeDrawer">&times;</button>
+        </div>
+        <div class="drawer-body">
+            <div class="chosen">السيارات: <strong id="chosenCars"></strong></div>
+            <form id="rentForm" action="#">
+                <fieldset>
+                    <legend>بيانات مقدم الطلب والحجز</legend>
+                    
+                    <div class="field" id="carsTabsContainer" style="display: none;">
+                        <label>اختر السيارة لضبط تاريخ حجزها:</label>
+                        <div id="carTabs" class="car-tabs"></div>
+                    </div>
+
+                    <div class="field">
+                        <label for="startDate">تاريخ بداية التأجير <span>*</span></label>
+                        <input type="date" id="startDate" name="startDate" />
+                        <small class="error"></small>
+                    </div>
+                    <div class="field">
+                        <label for="endDate">تاريخ نهاية التأجير <span>*</span></label>
+                        <input type="date" id="endDate" name="endDate" />
+                        <small class="error"></small>
+                    </div>
+                    <div class="days-box" id="daysBox">
+                        <span>عدد الأيام لهذه السيارة: <strong id="daysCount">0</strong></span>
+                        <span class="discount-badge" id="discountBadge">حسم 10%</span>
+                    </div>
+
+                    <hr style="border: 0; border-top: 1px solid #e1e5ec; margin: 20px 0;" />
+
+                    <div class="field">
+                        <label for="fullName">الاسم الكامل (بالعربي فقط)</label>
+                        <input type="text" id="fullName" name="fullName" />
+                        <small class="error"></small>
+                    </div>
+                    <div class="field">
+                        <label for="nationalId">الرقم الوطني (11 خانة) <span>*</span></label>
+                        <input type="text" id="nationalId" name="nationalId" maxlength="11" />
+                        <small class="error"></small>
+                    </div>
+                    <div class="field">
+                        <label for="mobile">رقم الموبايل (Syriatel / MTN)</label>
+                        <div class="input-wrap">
+                            <input type="text" id="mobile" name="mobile" maxlength="10" />
+                            <span class="sim-tag" id="simTag"></span>
+                        </div>
+                        <small class="error"></small>
+                    </div>
+                    <div class="field">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="text" id="email" name="email" />
+                        <small class="error"></small>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">إرسال الطلب</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <div class="overlay" id="modalOverlay"></div>
+
+    <div class="modal" id="modal">
+        <div class="modal-icon" id="modalIcon"></div>
+        <h3 id="modalTitle"></h3>
+        <div class="modal-body" id="modalBody"></div>
+        <button type="button" class="btn btn-primary btn-block" id="modalBtn">حسناً</button>
+    </div>
+    <script type="text/javascript" src="js/myFunctions.js"></script>
+</body>
+</html>
